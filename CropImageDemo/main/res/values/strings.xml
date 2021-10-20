@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="clickheretoselectanimage">Click Here to Select an Image</string>
+    <string name="compressimage">Compress Image</string>
+    <string name="clicksnap">Click Snap</string>
+</resources>

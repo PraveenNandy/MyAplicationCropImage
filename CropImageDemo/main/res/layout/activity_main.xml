@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <ImageView
+       android:layout_width="300dp"
+       android:layout_height="300dp"
+       android:id="@+id/activity_cameo_imageview"
+       android:layout_centerInParent="true"
+       android:src="@drawable/ic_image">
+
+   </ImageView>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/activity_cameo_materialtextview"
+        android:layout_below="@+id/activity_cameo_imageview"
+        android:text="Click here to Select an Image"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textAllCaps="false"
+        android:gravity="center">
+
+    </com.google.android.material.textview.MaterialTextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activity_cameo_materialtextview"
+        android:id="@+id/activity_cameo_linearlayout"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_below="@+id/activity_cameo_linearlayout"
+            android:id="@+id/activity_cameo_materialbtn_click"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:text="@string/clicksnap"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/teal_700"
+            app:cornerRadius="5dp"
+            android:padding="8dp">
+
+        </com.google.android.material.button.MaterialButton>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_below="@+id/activity_cameo_linearlayout"
+            android:id="@+id/activity_cameo_materialbtn_compressImage"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:text="@string/compressimage"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/teal_700"
+            app:cornerRadius="5dp"
+            android:padding="8dp">
+
+        </com.google.android.material.button.MaterialButton>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
